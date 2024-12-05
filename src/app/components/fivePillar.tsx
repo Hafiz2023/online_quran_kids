@@ -71,7 +71,7 @@ const FivePillars = () => {
         {/* Hajj (Pilgrimage) */}
         <div className="flex flex-col items-center w-28 p-4 text-center transition-transform duration-200 transform hover:scale-105 hover:bg-gray-100 rounded-lg shadow-md hover:shadow-lg">
           <Image
-            src="/icon/pilgrimage-icon.png"
+            src="/icon/pilgrimage.png"
             alt="Hajj (Pilgrimage)"
             width={80}
             height={80}

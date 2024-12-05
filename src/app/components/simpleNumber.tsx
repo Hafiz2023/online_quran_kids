@@ -1,13 +1,26 @@
 "use client";
 import { useEffect, useState } from "react";
 
-function Counter({ end, duration }: { end: string; duration: string|number }) {
+function Counter({ end, duration }: { end: string; duration: string | number }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
     const endValue = parseInt(end, 10);
-    const incrementTime: number = Math.floor((duration * 1000) / endValue);
+    const durationInSeconds = typeof duration === "string" ? parseFloat(duration) : duration;
+
+    // Validate duration and endValue
+    if (isNaN(endValue) || endValue <= 0) {
+      console.error("Invalid end value; it must be a positive number.");
+      return;
+    }
+
+    if (isNaN(durationInSeconds) || durationInSeconds <= 0) {
+      console.error("Invalid duration; it must be a positive number.");
+      return;
+    }
+
+    const incrementTime: number = Math.floor((durationInSeconds * 1000) / endValue);
 
     const timer = setInterval(() => {
       start += 1;

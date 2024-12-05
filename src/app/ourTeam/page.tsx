@@ -5,18 +5,18 @@ import Image from "next/image";
 const OurTeam: React.FC = () => {
   return (
     <div className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-6 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center">
           <div className="text-2xl font-bold mb-3 text-green-600 text-center p-5">
             General Question
           </div>
-          <p className="mb-6 max-w-xl mx-auto text-base leading-relaxed">
+          <p className="mb-6 text-justify max-w-xl mx-auto text-base leading-relaxed">
             At <span className="font-bold">Online Quran Kids</span>, our highly qualified teachers are dedicated to providing personalized, engaging lessons. With expertise in Quran recitation, Tajweed, and Islamic studies, they ensure your child learns effectively while enjoying the process. Our teachers create a supportive environment, guiding students at their own pace to achieve Quran reading excellence.
           </p>
         </div>
       </div>
 
-      <div className="flex flex-wrap -m-4">
+      <div className="flex px-4 sm:px-6 flex-wrap -m-4">
         {[
           {
             title: "Teacher 1",
