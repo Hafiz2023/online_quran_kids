@@ -5,7 +5,7 @@ const WhatsAppLink: React.FC = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <a
-        href=" https://wa.me/qr/26HFWUSD3IIOC1 " // Replace with your WhatsApp number in international format
+        href=" https://api.whatsapp.com/message/CMDRQ64SEDXBH1?autoload=1&app_absent=0" // Replace with your WhatsApp number in international format
         target="_blank" // Opens link in a new tab
         rel="noopener noreferrer" // Ensures security
         style={{ textDecoration: 'none' }}

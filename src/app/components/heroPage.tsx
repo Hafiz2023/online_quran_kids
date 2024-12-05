@@ -20,7 +20,7 @@ export default function HeroPage() {
           offer tailored courses that suit every level.
         </p>
         <Button className="bg-white  text-black ">
-          <Link target="_blank" href="/CourseRegistrationForm">
+          <Link target="_blank" href="/courseRegistrationForm">
             Get Started
           </Link>
         </Button>

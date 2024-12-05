@@ -51,27 +51,27 @@ function NavBar() {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-xl  py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl  py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
-                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
                   <Link href="/teacher" onClick={() => setNavbar(!navbar)}>
                     Teachers
                   </Link>
                 </li>
-                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
-                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
                   <Link href="/contactUs" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>
-                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
                   <Link
                     href="/servicePackages"
                     onClick={() => setNavbar(!navbar)}
@@ -79,8 +79,16 @@ function NavBar() {
                     Fee
                   </Link>
                 </li>
+                <li className="text-xl py-2 md:px-6 text-center hover:bg-green-600 md:hover:text-black md:hover:bg-transparent">
+                  <Link
+                    href="/quranDownload"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    Quran Pak
+                  </Link>
+                </li>
                 <li className="mt-4 md:mt-0 md:ml-4">
-                  <Button className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                  <Button className="text-black rounded-xl bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium  text-sm px-5 py-2.5 text-center">
                     <Link href="/courseRegistrationForm">Free Trial</Link>
                   </Button>
                 </li>

@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 const WhatsAppFooter: React.FC = () => {
-  const whatsappNumber = "923204338215"; // Replace with your WhatsApp number in international format
+  const whatsappNumber = "923138833130"; // Replace with your WhatsApp number in international format
 
   return (
     <footer style={footerStyle}>
@@ -12,6 +12,7 @@ const WhatsAppFooter: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         style={linkStyle}
+        aria-label="Contact us on WhatsApp"
       >
         <Image
           src="/whatsapp-icon.png"
@@ -28,19 +29,22 @@ const WhatsAppFooter: React.FC = () => {
 
 // Inline styles
 const footerStyle: React.CSSProperties = {
-  textAlign: "center",
-  padding: "20px",
-  backgroundColor: "#f1f1f1",
+  position: "fixed",
+  bottom: 0,
+  right: 20,
+  zIndex: 1000,
+  backgroundColor: "transparent",
 };
 
 const linkStyle: React.CSSProperties = {
   textDecoration: "none",
+  display: "inline-block",
 };
 
 const iconStyle: React.CSSProperties = {
   width: "50px",
   height: "50px",
-  transition: "transform 0.3s ease",
+  cursor: "pointer",
 };
 
 export default WhatsAppFooter;
